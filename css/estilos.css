@@ -1,0 +1,134 @@
+/*Reseteo*/
+*{
+    margin: 0;
+    padding: 0;
+}
+
+/*Fuentes*/
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400&display=swap');
+
+body{
+    font-family: 'Roboto', sans-serif;
+}
+
+.encabezado {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    height: 100px;
+    background-image: url("../img/fondo2.jpg");
+    border-bottom: rgb(119, 17, 119) solid 2px;
+
+}
+.tituloP {
+    color:#ffffff;
+    text-decoration: none;
+    font-size: 2rem;
+}
+.encabezado nav ul li {
+
+    display: inline-block;
+    list-style-type: none;
+}
+
+
+.encabezado nav ul li a {
+    text-decoration: none;
+    color: #ffffff;
+    font-size: 18px;
+    margin-left: 20px;
+    text-transform: uppercase;
+    }
+
+    .encabezado nav ul li a:hover{
+        color: #686768;
+        font-size: 20px;
+    }
+.img {
+    width: 180px;
+}
+.imagen {
+    width: 300px;
+    height: 300px;
+}
+
+.caja {
+    
+    margin: 20px;
+    padding: 20px;
+    border: 3px solid #5b047e;
+    border-radius: 4px;
+    box-shadow: 3px 3px 10px;
+    text-align: center;
+}
+section{
+    display: flex;
+    flex-wrap: wrap;
+}
+.servicios {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin-top: 50px;
+    margin-bottom: 50px;        
+}
+.imgFooter {
+    width: 80px;
+}
+/* WHATSAPP */
+
+.WhatsApp img {
+    width: 70px;
+    position: fixed;
+    bottom: 15px;
+    right: 15px;
+}
+/* FOOTER  */
+footer {
+    height: 100px;
+    width: 100%;
+    border: 3px solid #5b047e;
+    background-image: url("../img/fondo1.jpg");
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+@media (max-width:700px) and (min-width:400px) {
+.tituloP {
+   font-size: 14;
+   
+}
+
+.imagen {
+    width: 200px;
+    height: 200px;
+}
+.img {
+    width: 100;
+}
+.encabezado {
+    height: 150;
+    flex-direction: column;
+}
+}
+.encabezado nav ul li {
+
+    
+    list-style-type: none;}
+@media (max-width:399px) and (min-width:10px) {
+    .tituloP {
+        flex-direction: column;
+        display: none;
+    }
+    .imagen {
+        width: 100px;
+        height: 100px;
+    }
+    .encabezado {
+        
+    }
+    footer {
+        font-size: 12px;
+    }
+    }
