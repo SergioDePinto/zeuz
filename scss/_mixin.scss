@@ -1,0 +1,10 @@
+@mixin parrafo {
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 3rem;
+    text-align: center;
+    text-decoration: none;
+}
+
+.ParrafoMix {
+    @include parrafo;
+}

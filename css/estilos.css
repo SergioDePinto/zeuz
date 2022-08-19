@@ -1,134 +1,119 @@
-/*Reseteo*/
-*{
-    margin: 0;
-    padding: 0;
-}
+/*mapas*/
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400&display=swap");
+.fotocopias {
+  color: red; }
 
-/*Fuentes*/
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400&display=swap');
+.reparaciones {
+  color: white; }
 
-body{
-    font-family: 'Roboto', sans-serif;
-}
+.impresiones {
+  color: green; }
 
-.encabezado {
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
-    height: 100px;
-    background-image: url("../img/fondo2.jpg");
-    border-bottom: rgb(119, 17, 119) solid 2px;
+/* map - get*/
+.estiloMap {
+  background-color: green;
+  font-size: 30px; }
 
-}
-.tituloP {
-    color:#ffffff;
-    text-decoration: none;
-    font-size: 2rem;
-}
-.encabezado nav ul li {
+/* extend*/
+.estilo1 {
+  font-family: 'Courier New', Courier, monospace;
+  font-weight: bolder;
+  text-decoration: solid;
+  text-align: center; }
 
-    display: inline-block;
-    list-style-type: none;
-}
+.estilo2 {
+  font-size: 2rem; }
 
+.ParrafoMix {
+  font-family: 'Times New Roman', Times, serif;
+  font-size: 3rem;
+  text-align: center;
+  text-decoration: none; }
 
-.encabezado nav ul li a {
-    text-decoration: none;
-    color: #ffffff;
-    font-size: 18px;
-    margin-left: 20px;
-    text-transform: uppercase;
-    }
+h1 {
+  color: #790379; }
 
-    .encabezado nav ul li a:hover{
-        color: #686768;
-        font-size: 20px;
-    }
-.img {
-    width: 180px;
-}
-.imagen {
-    width: 300px;
-    height: 300px;
-}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
+
+.contenedor {
+  font-family: 'Roboto', sans-serif;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center; }
 
 .caja {
-    
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+  .caja figure {
+    position: relative;
+    height: 250px;
+    width: 350px;
+    overflow: hidden;
+    border-radius: 6px;
+    box-shadow: 0px 15px 25px rgba(0, 0, 0, 0.5);
+    cursor: pointer;
     margin: 20px;
-    padding: 20px;
-    border: 3px solid #5b047e;
-    border-radius: 4px;
-    box-shadow: 3px 3px 10px;
-    text-align: center;
-}
-section{
-    display: flex;
-    flex-wrap: wrap;
-}
-.servicios {
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
-    margin-top: 50px;
-    margin-bottom: 50px;        
-}
-.imgFooter {
-    width: 80px;
-}
-/* WHATSAPP */
+    border: 3px solid #5b047e; }
+    .caja figure img {
+      width: 100%;
+      height: 90%;
+      transition: all 500ms ease-in-out; }
+    .caja figure .capa {
+      position: absolute;
+      top: 0;
+      width: 100%;
+      height: 100%;
+      background: rgba(0, 0, 0, 0.74);
+      transition: all 500ms ease-in-out;
+      opacity: 0;
+      visibility: hidden;
+      text-align: center; }
+    .caja figure:hover > .capa {
+      opacity: 1;
+      visibility: visible; }
 
+h2 {
+  text-align: center; }
+
+.caja figure:hover > .capa h3 {
+  margin-top: 70px;
+  margin-bottom: 15px;
+  color: #fff; }
+
+.caja figure:hover > img {
+  transform: scale(1.3); }
+
+.caja figure .capa p {
+  color: #fff;
+  font-size: 15px;
+  line-height: 1.5;
+  width: 100%;
+  max-width: 220px;
+  margin: auto; }
+
+.imgFooter {
+  width: 80px; }
+
+/* WHATSAPP */
 .WhatsApp img {
-    width: 70px;
-    position: fixed;
-    bottom: 15px;
-    right: 15px;
-}
+  width: 70px;
+  position: fixed;
+  bottom: 15px;
+  right: 15px; }
+
 /* FOOTER  */
 footer {
-    height: 100px;
-    width: 100%;
-    border: 3px solid #5b047e;
-    background-image: url("../img/fondo1.jpg");
-    color: white;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-@media (max-width:700px) and (min-width:400px) {
-.tituloP {
-   font-size: 14;
-   
-}
-
-.imagen {
-    width: 200px;
-    height: 200px;
-}
-.img {
-    width: 100;
-}
-.encabezado {
-    height: 150;
-    flex-direction: column;
-}
-}
-.encabezado nav ul li {
-
-    
-    list-style-type: none;}
-@media (max-width:399px) and (min-width:10px) {
-    .tituloP {
-        flex-direction: column;
-        display: none;
-    }
-    .imagen {
-        width: 100px;
-        height: 100px;
-    }
-    .encabezado {
-        
-    }
-    footer {
-        font-size: 12px;
-    }
-    }
+  height: 100px;
+  width: 100%;
+  border: 3px solid #5b047e;
+  background-image: url("../img/fondo1.jpg");
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center; }

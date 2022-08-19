@@ -5,82 +5,161 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Zeuz</title>
-    <!-- CSS -->
-<link rel="stylesheet" href="./css/estilos.css">
-<link rel="shortcut icon" href="img/LOGO.png" type="image/x-icon" />
 
+<!--favicon -->
+<link rel="shortcut icon" href="img/LOGO.png" type="image/x-icon">
+<!-- bootstrap -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+<!-- CSS -->
+<link rel="stylesheet" href="./css/estilos.css">
+<!-- SEO -->
+<meta name="description" content="Zeuz, Reparacion de PC, Grafica, Fotocopias, Libreria" >
 
 </head>
 
 <body>
-    <!--ENCABEZDO -->
-
-    <header class="encabezado">
-                <h1 class="tituloP">Bienvenidos a <img src="./img/LOGO.png" alt="Logo Zeuz" class="img"></h1>
-        <nav class="enlaces">
-            <ul>
-                <li><a href="./pages/grafica.html">Grafica</a></li>
-                <li><a href="./pages/libreria.html">Libreria</a></li>
-                <li><a href="./pages/insumos.html">Insumos de PC</a></li>
-                <li><a href="./pages/pc.html">Servicio Tecnico</a></li>
-                <li><a href="./pages/contacto.html">Contacto</a></li>
+    
+    <nav class="navbar navbar-expand-lg" style="background-color: #910296;>
+        <div class="container-fluid">
+          <a class="navbar-brand" href="index.html">
+<img src="./img/LOGO.png" alt="Logo Zeuz"width="150">
+          </a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="/pages/grafica.html">Grafica</a>
+              </li>
+                            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Informatica
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="/pages/pc.html">Reparacion de PC & Venta</a></li>
+                  <li><a class="dropdown-item" href="/pages/insumos.html">Insumos</a></li>
+                  <li><hr class="dropdown-divider"></li>
+                  <li><a class="dropdown-item" href="*">Seguridad Informatica</li>
+                </ul>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="/pages/contacto.html">Contacto</a>
+              </li>
             </ul>
-        </nav>
-    </header>
-
-    <!--PRODUCTOS & SERVICIOS -->
-
-    <section class="servicios">
-
-        <div class="caja C1">
-            <h2>Grafica</h2>
-            <img src="./img/diseño.png" alt="Grafica" class="imagen" >
-            
+           
+          </div>
         </div>
-
-        <div class="caja C2">
-            <h2>Libreria</h2>
-            <img src="./img/libreria.jpg" alt="Libreria" class="imagen">
-            
+      </nav>
+      <h1>www.Zeuz.com.ar</h1>
+    <section class="contenedor ">
+        <div class="caja ">
+            <figure>
+                <h2>Servicio Tecnico</h2>
+                
+                    <img src="./img/pc.jpg" alt="Reparacion de PC" >
+                    <div class="capa">
+                    <h3>Reparaciones</h3>
+                    <p>Pc,Noteboock, Netboock, GPS, cargadores, tablet, HARD & SOFT</p>
+                    </div>
+            </figure>  
         </div>
-
-        <div class="caja C3">
-            <h2>Insumos de PC</h2>
-            <img src="./img/insumos.jpg" alt="Insumos de PC" class="imagen">
-            
+        <div class="caja ">
+            <figure>
+                <h2>Accesorios</h2>
+                <img src="./img/accesorios.jpg" alt="Accesorios de Pc" >
+                                <div class="capa">
+                    <h3>Accesorios de Informatica</h3>
+                    <p>Consegui lo que estas buscando, Teclados Gammer, Mouse, Parlantes, Cooler, Joystick, Etc</p>
+                </div>
+            </figure>  
         </div>
-
-        <div class="caja C4">
-            <h2>Servicio Tecnico</h2>
-            <img src="./img/pc.jpg" alt="Servicio Tecnico" class="imagen">
-            
+        <div class="caja ">
+            <figure>
+                <h2>Insumos de PC</h2>
+                <img src="./img/insumos.jpg" alt="insumos de PC" >
+                
+                <div class="capa">
+                    <h3>Insumos de PC</h3>
+                    <p>Gabinete kit, Mother, Micros, Memoria, Discos, todo en Hardware y Software</p>
+                </div>
+            </figure>  
         </div>
-        <div class="caja C5">
-            <h2>Actualizacion de GPS</h2>
-            <img src="./img/GPS.jpg" alt="Gps" class="imagen">
-            
+        <div class="caja ">
+            <figure>
+                <h2>GPS</h2>
+                <img src="./img/GPS.jpg" alt="GPS" >
+                
+                <div class="capa">
+                    <h3>GPS</h3>
+                    <p>Carga los mapas de los paises que quiera, en el Dia. Reparaciones, cables, cargadores</p>
+                </div>
+            </figure>  
         </div>
-
-        <div class="caja C6">
-            <h2>Seguridad electronica</h2>
-            <img src="./img/seguridad.png" alt="Seguridad electronica" class="imagen">
-            
+        <div class="caja ">
+            <figure>
+                <h2>Seguridad Electronica</h2>
+                <img src="./img/seguridad.png" alt="Seguridad Electronica" >
+                                <div class="capa">
+                    <h3>Seguridad Electronica</h3>
+                    <p>Instalacion de camaras de Seguridad, Mantenimiento, Alarmas, Control de Acceso, Cerco perimetral</p>
+                </div>
+            </figure>  
         </div>
-        <div class="caja C7">
-            <h2>Accesorios</h2>
-            <img src="./img/accesorios.jpg" alt="Accesorios Pc" class="imagen">
-            
+                <div class="caja ">
+            <figure>
+                <h2>Grafica</h2>
+                <img src="./img/diseño.png" alt="Grafica" >
+                                <div class="capa">
+                    <h3>Grafica</h3>
+                    <p>Diseños de volantes, tarjetas, talonarios, impresion de de Lona, y Plooter</p>
+                </div>
+            </figure>  
         </div>
-
+        <div class="caja ">
+            <figure>
+                <h2>Libreria</h2>
+                <img src="./img/libreria.jpg" alt="Libreria" >
+                                <div class="capa">
+                    <h3>Libreria</h3>
+                    <p>Vendemos Papeles, articulos de libreria y todo lo que necesites para tus proyectos</p>
+                </div>
+            </figure>  
+        </div>
+        <div class="caja ">
+            <figure>
+                <h2>Fotocopias & Impresiones</h2>
+                <img src="./img/fotocopias.png" alt="Fotocopias" >
+                                <div class="capa">
+                    <h3>Fotocopias</h3>
+                    <p>Fotocopias & impreciones, blanco y negro, color, Anillados, plastificados, Impresiones en papel especial, cartulina</p>
+                </div>
+            </figure>  
+        </div>
+        <div class="caja ">
+            <figure>
+                <h2>Diseño Web</h2>
+                <img src="./img/Web.jpg" alt="Diseño Web" >
+                                <div class="capa">
+                    <h3>Diseño Web</h3>
+                    <p>Si Samu nos aprueba empezamos con paginas web</p>
+                </div>
+            </figure>  
+        </div>
     </section>
 <!--Consultas WhatsApp  -->
-    <div class="WhatsApp">
-        <img src="./img/whatsapp-logo-11.png" alt="WhatsApp">
-    </div>
+<div class="WhatsApp">
+    <img src="./img/whatsapp-logo-11.png" alt="WhatsApp">
+</div>
 <!-- FOOTER -->
 <footer>
-    <h4>Sitio Web creado por <img src="./img/LOGO.png" alt="Logo Zeuz" class="imgFooter">2022</h4>
-    </footer>
-
+<h4>Sitio Web creado por <img src="./img/LOGO.png" alt="Logo Zeuz" class="imgFooter">2022</h4>
+</footer>
+<!-- JavaScript Bundle with Popper -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
 </body>
+ 
 </html>

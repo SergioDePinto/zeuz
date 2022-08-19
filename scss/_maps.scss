@@ -1,0 +1,15 @@
+/*mapas*/
+
+$mapServicio: (fotocopias: red, reparaciones: white, impresiones: green);
+
+@each $serv, $color in $mapServicio {
+    .#{$serv} {color: $color;}
+}
+/* map - get*/
+
+$estilo: (color: green, tamfuente: 30px);
+
+.estiloMap {
+    background-color: map-get($map: $estilo, $key: color) ;
+    font-size: map-get($map: $estilo, $key: tamfuente );
+}
